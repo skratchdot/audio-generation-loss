@@ -1,0 +1,40 @@
+{
+  "name": "audio-generation-loss",
+  "version": "1.0.0",
+  "description": "Evaluating lossless/lossy audio compression and generation loss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skratchdot/audio-generation-loss.git"
+  },
+  "author": "skratchdot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skratchdot/audio-generation-loss/issues"
+  },
+  "homepage": "https://github.com/skratchdot/audio-generation-loss#readme",
+  "dependencies": {
+    "async": "^2.0.0-rc.4",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "ejs": "^2.4.1",
+    "mkdirp": "^0.5.1",
+    "nightmare": "^2.4.0"
+  },
+  "keywords": [
+    "audio",
+    "lossy",
+    "lossless",
+    "compression",
+    "sox",
+    "ffmpeg",
+    "wav",
+    "mp3",
+    "ogg",
+    "waveform",
+    "spectrogram"
+  ]
+}

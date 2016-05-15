@@ -1,0 +1,67 @@
+<html>
+<head>
+  <style type="text/css">
+    html, body {
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+    #main {
+      width: 1200px;
+      height: 695px;
+      background: black;
+      color: white;
+    }
+    #left {
+      float: left;
+      width: 400px;
+    }
+    #right {
+      float: right;
+      width: 800px;
+    }
+    img {
+      width: 100%;
+      background: white;
+    }
+    .waveform img {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+    .info {
+      color: white;
+      text-align: center;
+    }
+    .clearfix {
+      clear: both;
+      float: none;
+      height: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="left">
+      <div class="info">
+        <br />
+        <hr />
+        <% Object.keys(info).forEach(function (key) { %>
+          <strong><%= key %>:</strong>
+          <div><%= info[key] %></div>
+          <hr />
+        <% }); %>
+      </div>
+    </div>
+    <div id="right">
+      <div class="spectrogram">
+        <img src="../spectrogram/<%= sampleNum %>.png" />
+      </div>
+      <div>&nbsp;</div>
+      <div class="waveform">
+        <img src="../waveform/<%= sampleNum %>.png" />
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</body>
+</html>
